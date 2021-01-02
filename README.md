@@ -23,11 +23,28 @@
 
 2. 编写两个bash函数 marco 和 polo 执行下面的操作
 
-    * [macro.bash](./second/macro.bash); [polo.bash](second/polo.bash)
+    * [macro.bash](./second/macro.bash); [polo.bash](./second/polo.bash)
     * 每当你执行 marco 时，当前的工作目录应当以某种形式保存，当执行 polo 时，无论现在处在什么目录下，都应当 cd 回到当时执行 marco 的目录
     * 执行 `source path-to/macro.bash` && `source path-to/polo.bash`
 
 3. 编写一段bash脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容。 加分项：报告脚本在失败前共运行了多少次
+
+    * [练习](./scond/check_run.bash)
+    * 执行： `source path-to/check_run.bash`
+
+    ```bash
+    #!/usr/bin/env bash
+
+    n=$(( RANDOM % 100 ))
+
+    if [[ n -eq 42 ]]; then
+        echo "Something went wrong"
+        >&2 echo "The error was using magic numbers"
+        exit 1
+    fi
+
+    echo "Everything went according to plan"
+    ```
 
 4. 编写一个命令，它可以递归地查找文件夹中所有的HTML文件，并将它们压缩成zip文件。注意，即使文件名中包含空格，您的命令也应该能够正确执行（提示：查看 xargs的参数-d）
 

@@ -3,3 +3,4 @@ macro() {
     foo=$(pwd)
     export MACRO=$foo
 }
+macro
