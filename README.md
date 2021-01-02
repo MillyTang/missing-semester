@@ -3,8 +3,9 @@
 ## [Course overview + the shell](./first.sh)
 ### 要求：练习 mkdir,cd,>,echo,>>
 ### 2种执行方式
-1. 在 `bash` 中按行输入执行
-2.执行`source ./path-t0/first.sh`文件
+
+* 在 `bash` 中按行输入执行
+* 执行`source ./path-to/first.sh`文件
 
 ## [Shell tools && Scripts](./second.sh)
 
@@ -17,9 +18,12 @@
     * 文件以最近访问顺序排序
     * 以彩色文本显示输出结果
 
+    > ls -AGulht
+
 2. 编写两个bash函数 marco 和 polo 执行下面的操作
 
     * 每当你执行 marco 时，当前的工作目录应当以某种形式保存，当执行 polo 时，无论现在处在什么目录下，都应当 cd 回到当时执行 marco 的目录
+    * 执行 `source path-to/macro.bash` && `source path-to/polo.bash`
 
 3. 编写一段bash脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容。 加分项：报告脚本在失败前共运行了多少次
 
