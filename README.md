@@ -1,13 +1,14 @@
 # missing-semester课程的课后练习
 
-## [Course overview + the shell](./first.sh)
+## Course overview + the shell
+
 ### 要求：练习 mkdir,cd,>,echo,>>
-### 2种执行方式
+### 2种执行方式[练习代码]((./first.sh))
 
 * 在 `bash` 中按行输入执行
 * 执行`source ./path-to/first.sh`文件
 
-## [Shell tools && Scripts](./second.sh)
+## Shell tools && Scripts
 
 ### 题目要求
 
@@ -22,6 +23,7 @@
 
 2. 编写两个bash函数 marco 和 polo 执行下面的操作
 
+    * [macro.bash](./second/macro.bash); [polo.bash](second/polo.bash)
     * 每当你执行 marco 时，当前的工作目录应当以某种形式保存，当执行 polo 时，无论现在处在什么目录下，都应当 cd 回到当时执行 marco 的目录
     * 执行 `source path-to/macro.bash` && `source path-to/polo.bash`
 
